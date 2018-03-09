@@ -47,3 +47,13 @@ makeAllCaps([7, 'pants', 'bird'])
   .then(words => sortWords(words))
   .then(result => console.log(result))
   .catch(error => console.log(error))
+
+// what is .then() used for and wat is .catch() used for??
+//  --> .then() awaits the resolution of the promise so that it can do something with the resolved promise value. .catch() catches the result of any rejected promise, usually an Error
+//
+//  what are good use cases for promis
+//  s?
+//  --> when you are writing asynchronous code where the value being return by your function happens outside of the normal stack, so that you don't have to wait for that value to be returned to run the next line 
+//
+// what other libs use promises?
+// --> any asynchronous code is going to use promises, this includes fetch calls, xmlhttprequests, authentication requests, as well as responses from backend libraries such as express and node. Middleware like thunk and sagas also make it easier to deal with async codes. 
